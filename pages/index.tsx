@@ -4,6 +4,7 @@ import Htag from '../components/Htag/Htag';
 import Button from '../components/Button/Button';
 import Ptag from '../components/Ptag/Ptag';
 import Tag from '../components/Tag/Tag';
+import Rating from '../components/Rating/Rating';
 
 const Home: NextPage = () => {
 	return (
@@ -27,6 +28,7 @@ const Home: NextPage = () => {
 				Green s
 			</Tag>
 			<Tag color='primary'>Primary</Tag>
+			<Rating rating={4} />
 		</>
 	);
 };
