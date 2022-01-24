@@ -6,6 +6,7 @@ import Ptag from '../components/Ptag/Ptag';
 import Tag from '../components/Tag/Tag';
 import Rating from '../components/Rating/Rating';
 import { useState } from 'react';
+import { withLayout } from '../Layout/Layout';
 
 const Home: NextPage = () => {
 	const [rating, setRating] = useState<number>(4);
@@ -38,4 +39,4 @@ const Home: NextPage = () => {
 	);
 };
 
-export default Home;
+export default withLayout(Home);
