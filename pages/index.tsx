@@ -5,8 +5,12 @@ import Button from '../components/Button/Button';
 import Ptag from '../components/Ptag/Ptag';
 import Tag from '../components/Tag/Tag';
 import Rating from '../components/Rating/Rating';
+import { useState } from 'react';
 
 const Home: NextPage = () => {
+	const [rating, setRating] = useState<number>(4);
+	const [rating2, setRating2] = useState<number>(2);
+
 	return (
 		<>
 			<Htag tag='h1'>Hello Dolly</Htag>
@@ -28,7 +32,8 @@ const Home: NextPage = () => {
 				Green s
 			</Tag>
 			<Tag color='primary'>Primary</Tag>
-			<Rating rating={4} />
+			<Rating rating={rating2} isEditable setRating={setRating2} />
+			<Rating rating={rating} isEditable setRating={setRating} />
 		</>
 	);
 };
