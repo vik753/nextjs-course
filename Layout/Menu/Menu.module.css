@@ -41,6 +41,10 @@
 	border-left: 1px solid #DFDFDF;
 }
 
+.secondLevelBlock {
+	overflow: hidden;
+}
+
 .thirdLevel {
 	display: block;
 
@@ -53,10 +57,6 @@
 	font-size: 14px;
 	font-weight: 500;
 	line-height: 19px;
-}
-
-.secondLevelBlockOpened {
-	margin-bottom: 20px;
 }
 
 .thirdLevel:hover,
