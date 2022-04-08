@@ -33,11 +33,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 			}
 		);
 		paths = paths.concat(
-			menu.flatMap((s) =>
-				s.pages.map(
-					(p) => `/${m.route === `[type]` ? 'courses' : m.route}/${p.alias}`
-				)
-			)
+			menu.flatMap((s) => s.pages.map((p) => `/${m.route}/${p.alias}`))
 		);
 	}
 	return {
